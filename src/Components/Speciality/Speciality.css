@@ -1,0 +1,30 @@
+/* speciality style  */
+.Speciality{
+    color: #056C5F;
+    font-family: 'Exo 2', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.Speciality img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+ /* single speciality style  */
+.single-speciality{
+    border: 1px solid rgb(204, 204, 204);
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+}
+.single-speciality:hover{
+    background-color: #EEA676;
+    color: white;
+    transition: 0.5s ease;
+}
+h4{
+    font-weight: 600;
+}

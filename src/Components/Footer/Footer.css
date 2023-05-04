@@ -1,0 +1,61 @@
+/* footer style  */
+.footer{
+    font-family: 'Libre Baskerville', serif;
+    background-color: #151616;
+    height: 450px;
+    color: rgb(173, 173, 173);
+    padding-top: 50px;
+}
+.wellnes-buddy{
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;
+}
+/* font style  */
+.about-footer p,.footer-services li,.address{
+    margin-top: 15px;
+    font-family: 'Exo 2', sans-serif;
+}
+.about-footer a{
+
+    text-decoration: none;
+    color: #EEA676;
+    padding: 10px;
+    font-size: 20px;
+}
+.about-footer a:hover{
+    color:#196560;
+}
+/* subscribe button style  */
+.subscribe button{
+    padding: 20px 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.subscribe button:hover{
+    background-color: #EEA676;
+    transition: 0.5s ease;
+}
+.input{
+    margin-top: 20px;
+    padding: 20px 35px;
+    border-radius: 2px;
+    border:none;
+}
+/* li style  */
+.footer-services li {
+    list-style-type: none;
+    margin-top: 5px;
+
+}
+.footer-services ul{
+    margin-top: 20px;
+}
+.footer-services li:hover{
+    color: #EEA676;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+/* contacts style  */
+.contacts{
+    color: #EEA676;
+}

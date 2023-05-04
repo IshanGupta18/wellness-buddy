@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Donnie Anderson",
+        "expertise": "Sr. Psychologist",
+        "email": "donniebere@gmail.com",
+        "phone": "930-064-4654",
+        "image": "https://i.ibb.co/JxbvB3G/pexels-andrea-piacquadio-3777946.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tashanu Canalse",
+        "expertise": "Therapy Expert",
+        "email": "tashanucan@gmail.com",
+        "phone": "930-384-9654",
+        "image": "https://i.ibb.co/ZVqsGS7/pexels-cottonbro-4100672.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ristopher Givera",
+        "expertise": "Family Psychologist",
+        "email": "ristopherg@gmail.com",
+        "phone": "930-364-4654",
+        "image": "https://i.ibb.co/FzBFFg1/pexels-anthony-shkraba-7579112.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Steves Musayin",
+        "expertise": "Sr. Therapist",
+        "email": "stevesmusn@gmail.com",
+        "phone": "230-364-2654",
+        "image": "https://i.ibb.co/gvCqGZ0/pexels-kampus-production-6684772.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Charles Harveys",
+        "expertise": "Love Psychologist",
+        "email": "charlesharv@gmail.com",
+        "phone": "280-064-2674",
+        "image": "https://i.ibb.co/dBxJ58r/pexels-alena-darmel-7322203.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Russel Dickerson",
+        "expertise": "Sr. Psychologist",
+        "email": "russeldicker@gmail.com",
+        "phone": "230-364-2654",
+        "image": "https://i.ibb.co/k3fTyRD/pexels-mart-production-7709235.jpg"
+    }
+]

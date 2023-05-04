@@ -1,0 +1,35 @@
+/* registration page style  */
+.registration-page{
+    font-family: 'Exo 2', sans-serif;
+    width: 40%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    background-color: #EEA676;
+    padding: 30px;
+    border-radius: 5px;
+}
+/* hover style  */
+.registration-page:hover{
+    background-color: #056C5F;
+    color: white;
+}
+.registration-page:hover button{
+    background-color: #EEA676;
+}
+.registration-page h3{
+    padding-bottom: 30px;
+}
+.registered{
+    text-align: left;
+    margin-left: -180px;
+}
+/* button style  */
+.button{
+    background-color: #056C5F;
+    color: white;
+}
+.button:hover{
+    background-color: #EEA676;
+    color: white;
+}

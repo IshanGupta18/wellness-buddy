@@ -1,0 +1,22 @@
+/* team style  */
+.team{
+    color: white;
+    height: 450px;
+    background-image: url('../../images/banner_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -8px;
+}
+.team h1{
+    padding-top: 150px;
+    
+}
+/* container style  */
+.teams-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+}

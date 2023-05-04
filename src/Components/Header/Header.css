@@ -1,0 +1,50 @@
+/* header style  */
+.header{
+    display: flex;
+    background-color: #196560;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 05px;
+    width: 100%;
+}
+.header h3{
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 5px;
+}
+.header a{
+    font-size:larger;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-right: 22px;
+}
+/* links style  */
+.links{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.links a:hover{
+    color: #EEA676;
+    transition: color 0.5s ease,border 0.5s ease;
+}
+/* phone number style  */
+.phone{
+    color: white;
+    font-size: 14px;
+    padding-top: 14px;
+    margin-left: 40px;
+}
+.phone-icon{
+    color: #EEA676;
+}
+/* button style  */
+button{  
+    border: none;
+    color: white;
+    background-color: #196560;
+}
+.font{
+    font-family: 'Exo 2', sans-serif;
+}

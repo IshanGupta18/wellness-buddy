@@ -1,0 +1,19 @@
+/* service style  */
+.services{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.professional-psychology{
+    color: #056C5F;
+}
+/* container style  */
+.service-container{
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    
+}

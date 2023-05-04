@@ -1,0 +1,48 @@
+/* slider style  */
+.slider{
+    margin-top: 100px;
+    height: 500px;
+    background-image: url(https://i.ibb.co/vqxx5qc/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.slider img{
+    opacity:92%;  
+}
+/* caption style  */
+.caption{
+    padding-top: 100px;
+    padding-left: 100px;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 200px;
+}
+.caption h1,h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.caption h4{
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* button style  */
+.button{
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 30px;
+    padding: 20px 36px;
+    background-color: #EEA676;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: #196560;
+    transition: background-color 0.5s ease;
+}
+/* text style  */
+.depression-solution{
+    font-family: 'Exo 2', sans-serif;
+    color: #EEA676;
+}

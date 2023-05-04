@@ -1,0 +1,40 @@
+/* single team style  */
+.single-team{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+.single-team img{
+    box-shadow: 15px 0px 0px 0px #EEA676;
+
+}
+/* hover style  */
+.single-team:hover{
+    border: 1px solid #EEA676;
+    box-shadow: 10px 10px 0px 0px #056C5F;
+    background-color: #ebc6ae;
+    transition: 0.5s ease;
+
+}
+.single-team:hover img{
+    box-shadow: 15px 0px 0px 0px #056C5F;
+    transition: 0.5s ease;
+}
+/* button style  */
+.name, .read-details{
+    color: #EEA676;
+}
+.single-team:hover hr{
+    color: #ffffff;
+    height: 2px;
+}
+.single-team:hover .name{
+    color: #056C5F;
+}
+.single-team:hover .read-details{
+    color: #056C5F;
+}
