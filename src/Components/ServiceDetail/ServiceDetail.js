@@ -7,12 +7,12 @@ const ServiceDetail = () => {
     // using hooks 
     const { serviceId } = useParams();
     const [service, setService] = useState([]);
-    const [detail, setDetail] = useState({});
+    // const [detail, setDetail] = useState({});
 
     console.log(service);
 
     console.log(serviceId);
-    const { id, name } = service;
+    // const { id, name } = service;
     // loading data 
     useEffect(() => {
         const url = `/data.json`;

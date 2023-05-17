@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadSideVirus, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+// react toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 // icons 
 const elementHeadSideVirus = <FontAwesomeIcon icon={faHeadSideVirus} />
 const elementfaPaperPlane = <FontAwesomeIcon icon={faPaperPlane} />
@@ -13,8 +17,23 @@ const elementfaFacebookSquare = <FontAwesomeIcon icon={faFacebookSquare} />
 const elementfaTwitter = <FontAwesomeIcon icon={faTwitter} />
 const elementfaInstagram = <FontAwesomeIcon icon={faInstagram} />
 const elementfaLinkedin = <FontAwesomeIcon icon={faLinkedin} />
+
 // footer component 
 const Footer = () => {
+
+    const notify = () => {
+        toast.success('You are subscribed', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    }
+
     return (
         <div className="footer">
             <Container>
@@ -39,8 +58,7 @@ const Footer = () => {
                             <ul>
                                 <li>-Business Frustation</li>
                                 <li>-Anxiety Dosorder</li>
-                                <li>-Personal Meeting</li>
-                                <li>-Couple Therapy</li>
+                                <li>-Psychodynamic Therapy</li>
                                 <li>-Family Counselling</li>
                                 <li>-Relationship Problem</li>
                                 <li>-Depression Problem</li>
@@ -51,20 +69,22 @@ const Footer = () => {
                     <Col>
                         <h4>Contact Info</h4>
                         <div className="address">
-                            <address>123, ABC, XYZ</address>
+                            <address> Chitkara University, Rajpura </address>
                             <p><span className="contacts">Email: </span> <br /> info@wellnesbuddy.com</p>
-                            <p><span className="contacts">Support:</span> <br /> Support: +91xxxxxxxxxx</p>
+                            <p><span className="contacts">Support:</span> <br /> Support: +91 998877665544 </p>
                             <p><span className="contacts">Website:</span> <br /> www.wellnessbuddy.com</p>
                         </div>
                     </Col>
                     <Col className="subscribe">
                         <h4>Stay In Touch</h4>
                         <input className="input" type="email" placeholder="Email Address" />
-                        <button>{elementfaPaperPlane} &nbsp; Subscribe Now</button>
+                        <button onClick={notify}>{elementfaPaperPlane} &nbsp; Subscribe Now</button>
+                        <ToastContainer />
                     </Col>
                 </Row>
                 <hr/>
             </Container>
+            
         </div>
 
     );

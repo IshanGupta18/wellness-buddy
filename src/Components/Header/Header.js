@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadSideVirus, faPhoneAlt, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,9 @@ const elementfaArrowCircleRight = <FontAwesomeIcon icon={faArrowCircleRight} />
 // header component 
 const Header = () => {
     const { user, logOut } = useAuth();
+
+    const item = localStorage.getItem('info');
+
     return (
         <Navbar >
             {/* navbar  */}
@@ -25,18 +28,31 @@ const Header = () => {
                         <NavLink to="/services">Services</NavLink>
                         <NavLink to="/appointment">Appointment</NavLink>
                         <NavLink to="/team">Psychologist</NavLink>
-                        <NavLink to="/login">Login</NavLink>
-                        <NavLink to="/register">Register</NavLink>
+                        {/* <NavLink to="/register">Register</NavLink> */}
+                        {
+                            item ? 
+                                <>
+                                {user?.displayName && <span className="font display-name" style={{ backgroundColor: '#EEA676', marginTop: '5px', height: '65px', color: 'white', fontFamily: 'monospace', paddingTop: '20px', paddingLeft: '13px', paddingRight: '13px', borderRadius: '30px', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer' }}> Welcome :) {user.displayName} </span>}
                         {/* conditional rendering  */}
-                        {user?.displayName && <span className="font" style={{ backgroundColor: '#EEA676', color: 'white', padding: '5px', marginBottom: '0px', marginTop: '5px', borderRadius: '2px', marginLeft: '10px', fontSize: '18px', fontWeight: 'bold' }}>{user.displayName} </span>}
                         {
                             user?.displayName && <button className="font" onClick={logOut}>Logout {elementfaArrowCircleRight}</button>}
+                                </>
+
+                            :
+
+                            <>
+                                <NavLink to="/login">Login</NavLink>
+                            </>
+                        }
+
+
+                        
                     </Nav>
                     <Nav>
                         {/* phone number  */}
                         <div className="phone">
                             <p><span className="phone-icon">{elementfaPhoneAlt} </span>
-                                +91xxxxxxxx</p>
+                                +91 998877665544</p>
                         </div>
                     </Nav>
                 </Container>

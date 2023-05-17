@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Services from './Components/Services/Services';
+
 import Login from './Components/Login/Login';
-import Register from './Components/Register/Register';
+// import Register from './Components/Register/Register';
 import NotFound from './Components/NotFound/NotFound';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
@@ -30,9 +28,6 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/about">
-              <About></About>
-            </Route>
             <PrivateRoute path="/appointment">
               <Appointment></Appointment>
             </PrivateRoute>
@@ -48,9 +43,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/register">
+            {/* <Route path="/register">
               <Register></Register>
-            </Route>
+            </Route> */}
             <Route path="*">
               <NotFound></NotFound>
             </Route>

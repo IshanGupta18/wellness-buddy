@@ -52,7 +52,7 @@ const Login = () => {
             <h1>{elementfaUser}</h1>
             <button onClick={handleGoogleLogin}>Google Sign In {elementfaArrowCircleRight}</button>
             <br />
-            <Link to="/register" >New to Mental Carevio?</Link>
+            <Link to="/register" >New to Wellness Buddy?</Link>
         </div>
     );
 };
